@@ -8,31 +8,31 @@ body {
     font-family: Arial, sans-serif;
     height: 100vh;
     display: flex;
-    justify-content: center; /* Centre horizontalement (change en flex-end si tu le veux dans un coin) */
-    align-items: center;     /* Centre verticalement (change en flex-start si tu le veux en haut) */
-    padding: 1rem;
+    justify-content: flex-end; /* Aligne la boîte tout à droite */
+    align-items: flex-start;  /* Aligne la boîte tout en haut */
+    padding: 2rem;            /* Espace de sécurité par rapport aux bords de l'écran */
     background-color: #ffffff;
     transition: background-color 0.5s ease;
 }
 
 .card {
-    background: #ffffff; /* Fond blanc bien net pour le conteneur */
+    background: #ffffff; /* Le petit conteneur blanc opaque */
     padding: 2.5rem 2rem;
     border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Belle ombre pour détacher la boîte du fond */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Ombre pour bien détacher la boîte */
     text-align: center;
-    max-width: 400px;
+    max-width: 350px;
     width: 100%;
 }
 
 h1 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
     color: #222222;
 }
 
 p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: 1.5rem;
     color: #444444;
 }
@@ -55,7 +55,7 @@ p {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.1s ease;
-    width: 100%; /* Le bouton prend toute la largeur du conteneur pour faire plus propre */
+    width: 100%;
 }
 
 #btn:hover {
