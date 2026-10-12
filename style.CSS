@@ -1,23 +1,67 @@
-/* ANCIEN CODE (pour centrer au milieu) :
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centre horizontalement (change en flex-end si tu le veux dans un coin) */
+    align-items: center;     /* Centre verticalement (change en flex-start si tu le veux en haut) */
+    padding: 1rem;
     background-color: #ffffff;
     transition: background-color 0.5s ease;
 }
-*/
 
-/* NOUVEAU CODE (pour déplacer dans un coin) */
-body {
-    font-family: Arial, sans-serif;
-    min-height: 100vh;
-    display: flex;
-    justify-content: flex-end; /* Aligne horizontalement à droite */
-    align-items: flex-start;  /* Aligne verticalement en haut */
-    padding: 2rem;            /* Ajoute un peu d'espace avec le bord de l'écran */
-    background-color: #ffffff;
-    transition: background-color 0.5s ease;
+.card {
+    background: #ffffff; /* Fond blanc bien net pour le conteneur */
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Belle ombre pour détacher la boîte du fond */
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    color: #222222;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #444444;
+}
+
+#color-code {
+    font-weight: bold;
+    color: #000000;
+    background: #f0f0f0;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+}
+
+#btn {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    width: 100%; /* Le bouton prend toute la largeur du conteneur pour faire plus propre */
+}
+
+#btn:hover {
+    background-color: #1d4ed8;
+}
+
+#btn:active {
+    transform: scale(0.98);
 }
