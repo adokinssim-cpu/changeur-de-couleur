@@ -1,4 +1,4 @@
-// Sélection des éléments HTML via les identifiants stricts du cahier des charges
+// Sélection des éléments HTML 
 const colorButton = document.getElementById('btn');
 const colorCodeText = document.getElementById('color-code');
 
